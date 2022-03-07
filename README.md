@@ -1,2 +1,2 @@
 # JalaliDatePicker
-Jalali (shamsi or persian) clendar DatePicker
+Jalali (shamsi or persian) calendar DatePicker
