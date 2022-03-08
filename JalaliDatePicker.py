@@ -10,7 +10,7 @@ def menueSelectDate():
     reg_screen.title(" انتخاب تاریخ فارسی ")
     reg_screen.geometry("350x280")
     def validate():
-        year, month, day, i= calendar.selection
+        year, month, day= calendar.selection
         if year is not None:
             SelectedDate=str(day)+'/'+str(month)+'/'+str(year)
 
