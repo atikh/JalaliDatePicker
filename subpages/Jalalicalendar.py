@@ -324,11 +324,11 @@ class TextCalendar(Calendar):
     def formatweekday(self, day, width):
         names= [
             'Sat-',
-            'Sun-',
-            'Mon-',
-            'Tue-',
-            'Wed-',
-            'Thu-',
+            'Sun--',
+            'Mon--',
+            'Tue---',
+            'Wed---',
+            'Thu--',
             'Fri-',
         ]
         return names[day][:width].center(width)
