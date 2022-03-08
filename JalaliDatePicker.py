@@ -8,7 +8,7 @@ def menueSelectDate():
     global reg_screen
     reg_screen = Tk()
     reg_screen.title(" انتخاب تاریخ فارسی ")
-    reg_screen.geometry("350x280")
+    reg_screen.geometry("450x280")
     def validate():
         year, month, day= calendar.selection
         if year is not None:
@@ -20,10 +20,10 @@ def menueSelectDate():
 
 
     calendar = JCalendar(reg_screen, selectbackground='red', selectforeground='white')
-    calendar.place(x=5, y=20)
-    Button(reg_screen, text='انتخاب', command=validate).place(x=160, y=205)
+    calendar.grid(column=1, row=1)
+    Button(reg_screen, text='انتخاب', command=validate).grid(column=1, row=2)
     label = Label(reg_screen)
-    label.place(x=120, y=235)
+    label.grid(column=1, row=3)
 
 
     B1 = Button(reg_screen, text='تایید و ادامه', background='purple', fg='white')
