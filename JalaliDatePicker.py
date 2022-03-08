@@ -12,8 +12,6 @@ def menueSelectDate():
     def validate():
         year, month, day, i= calendar.selection
         if year is not None:
-            if i == 1:  # 29 Esfand sale adi
-                day=30
             SelectedDate=str(day)+'/'+str(month)+'/'+str(year)
 
             label.configure(text='تاریخ انتخابی:   ' + SelectedDate)
