@@ -220,11 +220,7 @@ class JCalendar(ttk.Frame):
         """
         if not self._selection:
             return None
-        i=0
         year, month = self._date.year, self._date.month
         Day=int(self._selection[0])
-        if month==12 and Day==30:
-            CHECK=29
-            i=1
 
-        return year, month, Day, i
+        return year, month, Day
